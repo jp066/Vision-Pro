@@ -7,7 +7,7 @@
 }
 
 *, ::after, ::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -15,14 +15,14 @@ html {
 }
 
 body {
-  background: #03192E;
+  background: #FADADD;
   color: #FFF;
   font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
 button {
-  color: #04223e;
+  color: #FADADD ;
   border: 0;
   font-weight: 600;
   cursor: pointer;
@@ -45,32 +45,45 @@ a:hover, button:hover {
   padding: 5px;
 }
 
+.nav-item a[href="/"] {
+  color: #89aa8a;
+}
+
+
+.nav-item a[href="#feutures"]:nth-of-type(1) {
+  color: #89aa8a;
+}
+
+.nav-item a[href="#feutures"]:nth-of-type(2) {
+  color: #89aa8a;
+}
+
 .navbar .nav-item:not(:last-child) {
   float: left;
   padding: 10px;
 }
 
-
 .navbar .nav-item:last-child {
   float: right;
   padding: 10px 15px;
   margin: 10px;
-  background-color: #F47850;
+  background-color: #89aa8a;
   border-radius: 10px;
 }
 
 .hero-section {
-  background-color: #04223E;
-  background-image: url("./img/header-bg.png");
+  background-color: #FADADD;
+  background-image: url("./img/uma-visao-mais-ampla.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 16.8em 0 14.8em 0;
   border-radius: 0 0 50px 50px;
-
 }
 
 .hero-title {
   margin: 15px;
+  color: #89aa8a;
 }
 
 .hero-description {
@@ -78,20 +91,19 @@ a:hover, button:hover {
 }
 
 .hero-btn {
-  background: linear-gradient(45deg, #F47850, #FFA93A);
+  background: linear-gradient(45deg, #89aa8a , #89aa8a );
 }
 
 .s-m-section {
-  background: linear-gradient(45deg, #F47850, #FFA93A);
+  background: linear-gradient(45deg, #89aa8a, #89aa8a);
   padding: 20px;
 }
-
 
 .s-m-title {
   margin: 20px;
 }
 
-.s-m-descritpion {
+.s-m-description {
   margin: 0 0 40px 0;
 }
 
@@ -104,11 +116,11 @@ a:hover, button:hover {
 
 .s-m-btn-2 {
   background-color: #03192e;
-  color: #F47850;
+  color: #89aa8a;
 }
 
 .time-load-section {
-  background: linear-gradient(0deg, #E6F0FA 40%, #03192E 40%);
+  background: linear-gradient(0deg, #89aa8a 40%, #FADADD 80%);
   padding: 100px 0;
 }
 
@@ -117,27 +129,20 @@ a:hover, button:hover {
   border-radius: 10px;
   background: #FFF;
   color: #414f7b;
-  margin: 15px;
+  max-width: 300px;
+  margin: 0 auto;
   box-shadow: -1px 1px 20px 2px #00000030;
 }
 
-.statics-section {
-  background-color: #E6F0FA;
-  color: #03192E;
-  padding: 70px;
-}
-
-.statics-description {
-  margin: 10px 0 50px 0;
-}
-
-.statics-rows {
-  flex: 33.33%;
+.card-image {
+  width: 100px;
+  height: auto;
 }
 
 .feutures-section {
   padding: 85px 60px;
   background-image: url("./img/wave.png");
+  background-color: #89aa8a;
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
@@ -177,7 +182,6 @@ a:hover, button:hover {
   .container {
     width: 1170px;
   }
-
 }
 
 @media (min-width: 576px) {
@@ -209,8 +213,8 @@ a:hover, button:hover {
 @media (min-width: 992px) {
   .card {
     -ms-flex: 0 0 45%;
-     flex: 0 0 45%; 
-     max-width: 45%;
+    flex: 0 0 45%; 
+    max-width: 45%;
   }
   .statics-rows {
     flex: 33.33%;
