@@ -107,6 +107,10 @@ a:hover, button:hover {
   margin: 0 0 40px 0;
 }
 
+.acess {
+  color: #03192e;
+}
+
 .s-m-btn {
   border: 2px solid #03192e;
   color: #03192e;
