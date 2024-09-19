@@ -22,12 +22,19 @@ body {
 }
 
 button {
-  color: #FADADD ;
-  border: 0;
+  color: #FADADD;
   font-weight: 600;
   cursor: pointer;
   padding: 10px 20px;
+  border: 2px solid #89aa8a;
   border-radius: 5px;
+}
+
+.time-load-section,
+.map-section,
+.feutures-section,
+.s-m-section {
+  background-color: #89aa8a; /* Branco */
 }
 
 a {
@@ -45,17 +52,28 @@ a:hover, button:hover {
   padding: 5px;
 }
 
-.nav-item a[href="/"] {
+.nav-item a[href="#sobre"] {
   color: #89aa8a;
+  border: 2px solid #89aa8a;
+  border-radius: 10px;
 }
 
-
-.nav-item a[href="#feutures"]:nth-of-type(1) {
+.nav-item a[href="#acessibilidade"] {
   color: #89aa8a;
+  border: 2px solid #89aa8a;
+  border-radius: 10px;
 }
 
-.nav-item a[href="#feutures"]:nth-of-type(2) {
+.nav-item a[href="#redes"] {
   color: #89aa8a;
+  border: 2px solid #89aa8a;
+  border-radius: 10px;
+}
+
+.nav-item a[href="#mapa"] {
+  color: #89aa8a;
+  border: 2px solid #89aa8a;
+  border-radius: 10px;
 }
 
 .navbar .nav-item:not(:last-child) {
@@ -111,17 +129,14 @@ a:hover, button:hover {
   color: #03192e;
 }
 
-.s-m-btn {
-  border: 2px solid #03192e;
+.s-m-btn{
+  border: 2px solid #FADADD;
   color: #03192e;
   padding: 8px 20px;
   background: 0;
 }
 
-.s-m-btn-2 {
-  background-color: #03192e;
-  color: #89aa8a;
-}
+
 
 .time-load-section {
   background: linear-gradient(0deg, #89aa8a 40%, #FADADD 80%);
@@ -138,6 +153,16 @@ a:hover, button:hover {
   box-shadow: -1px 1px 20px 2px #00000030;
 }
 
+.card-document {
+  padding: 60px;
+  border-radius: 10px;
+  background: #FFF;
+  color: #414f7b;
+  max-width: 300px;
+  margin: 0 auto;
+  box-shadow: -1px 1px 20px 2px #00000030;
+}
+
 .card-image {
   width: 100px;
   height: auto;
@@ -145,11 +170,10 @@ a:hover, button:hover {
 
 .feutures-section {
   padding: 85px 60px;
-  background-image: url("./img/wave.png");
   background-color: #89aa8a;
   background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: bottom;
+  background-position-x: center;
+  background-position-y: center;
 }
 
 .feutures-card {
